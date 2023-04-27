@@ -1,0 +1,92 @@
+@import url("reset.css");
+
+
+body{
+    background-color: black;
+    color: #f6f6f6;
+}
+.layout_pagina{
+    width: 80%;
+    margin: auto;
+}
+
+.navegador{
+    background: #7B4AE2;
+    border-radius: 10px;
+    border: 1px solid var(--branco);
+    padding: 1em;
+    margin: auto;
+    margin-top: 1em;
+    justify-content: right;
+    display: flex;
+    
+}
+
+.ad{
+    padding: 0 1em;
+    text-decoration: none;
+    color: white;
+}
+ 
+.toggle input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* Estilo do botão slider */
+.toggle .slider {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.4s;
+}
+  
+  /* Estilo do botão slider quando o checkbox é marcado */
+.toggle input:checked + .slider {
+    background-color: #2196F3;
+}
+/* Estilo do botão slider em forma circular */
+.toggle .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2.5px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+  
+  /* Estilo do botão slider em forma circular quando o checkbox é marcado */
+.toggle input:checked + .slider:before {
+    transform: translateX(13px);
+}
+
+
+.informativo{
+    display: flex;
+    justify-content: space-around;
+}
+.informativo_layout{
+    width: 40%;
+    padding: 2em;
+    text-align: center;
+}
+.imagem_perfil{
+    width: 40%;
+    border-radius: 50%;
+    
+}
+hr{
+    background-color: white;
+}
+
+strong{
+    color: #22D4FD;
+}
