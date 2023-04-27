@@ -3,14 +3,18 @@
 
 :root{
     --cor-de-fundo: #100f15;
-    --branco: #FFFFFF;
+    --branco: #dcf1f3;
     --fonte-principal: "Poppins";
-
+    
 }
 
 body{
     background-color: var(--cor-de-fundo);
     color: #f6f6f6;
+}
+body.light {
+    background-color: var(--branco);
+    color: #0c0b0b;
 }
 .layout_pagina{
     width: 80%;
@@ -19,6 +23,7 @@ body{
 }
 .informativo_texto{
     padding: 1em;
+    filter: brightness(0.5) contrast(1.2);
 }
 
 .informativo_layout:hover :not(:hover){
@@ -46,6 +51,12 @@ body{
     padding: 0 1em;
     text-decoration: none;
     color: white;
+}
+.ad:hover :not(:hover){
+    opacity: 0.3;
+}
+.ad:hover{
+    scale: 1.3;
 }
  
 .toggle input {
