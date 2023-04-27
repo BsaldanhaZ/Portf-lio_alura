@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Portifólio</title>
 </head>
 <body>
@@ -33,20 +34,51 @@
         </div> 
         <hr />     
     </section>
-    <section class="layout_pagina">
-        <div class="informativo">
-            <div class="informativo_layout">
-                
-            </div> 
-            <div class="informativo_layout">              
-                
-            </div> 
-        </div> 
-        <hr />     
+    <section class="carrossel layout_pagina">
+        <h2 class="carrossel__titulo">Últimos lançamentos</h2>
+        
+        <div class="container__swiper">
+            <!-- Slider main container -->
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="livro sobre portugol e programação"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="livro sobre logica com javascript"></div>
+                <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="livro sobre métricas ágeis"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="livro sobre portugol e programação"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="livro sobre logica com javascript"></div>
+                <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="livro sobre métricas ágeis"></div>
+            </div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+
+        </div>
     </section>
-    
     <footer>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            },
+        });
+        
+    </script>
 </body>
 </html>
