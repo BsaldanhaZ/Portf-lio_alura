@@ -1,13 +1,24 @@
 @import url("reset.css");
 @import url("carroussel.css");
 
+:root{
+    --cor-de-fundo: #100f15;
+    --branco: #FFFFFF;
+    --fonte-principal: "Poppins";
+
+}
+
 body{
-    background-color: black;
+    background-color: var(--cor-de-fundo);
     color: #f6f6f6;
 }
 .layout_pagina{
     width: 80%;
     margin: auto;
+    font-family: var(--fonte-principal);
+}
+.informativo_texto{
+    padding: 1em;
 }
 
 .navegador{
@@ -19,6 +30,7 @@ body{
     margin-top: 1em;
     justify-content: right;
     display: flex;
+    font-family: var(--fonte-principal);
     
 }
 

@@ -1,6 +1,5 @@
 .carrossel__titulo {
     color: aliceblue;
-    background-color:#7B4AE2;
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
@@ -9,7 +8,8 @@
 }
 
 .swiper-slide img{
-    width: 100%;
+    width: 60%;
+    margin-top: 3em;
     
 }
 
